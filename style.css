@@ -660,12 +660,16 @@ footer {
   animation: slideInRight 0.6s ease forwards;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
 
    .nav-title {
     font-size: 0.67rem; /* Chhoti screen ke liye chhoti font */
     text-align: center; /* Agar center align karna ho */
     color: rgba(255, 255, 255, 0.9); /* Thoda bright bhi kar sakte ho */
+  }
+
+  .hero{
+    min-height: none;
   }
 
   .whatsapp-btn {
