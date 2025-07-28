@@ -690,6 +690,7 @@ footer {
 
   .hero {
     margin-top: 2rem;
+    margin-bottom: -3rem;
   }
 
   .hero-content{
@@ -700,6 +701,7 @@ footer {
   }
 
   #about {
+  margin-top: 1rem;
   position: relative;
   z-index: 1;
   padding: 1rem 0; /* Match other sections */
