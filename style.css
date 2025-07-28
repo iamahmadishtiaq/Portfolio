@@ -672,7 +672,7 @@ footer {
   animation: slideInRight 0.6s ease forwards;
 }
 
-@media screen and  (min-width:320px) and ( max-width: 1024px) {
+@media screen and  (min-width:320px) and ( max-width: 768px) {
 
    .nav-title {
     font-size: 0.67rem; /* Chhoti screen ke liye chhoti font */
@@ -823,3 +823,9 @@ footer {
   background: var(--gradient-2);
 }
 
+@media(width:393px){
+      .hero {
+        margin-top: 0rem;
+        margin-bottom: -8rem;
+    }
+}
