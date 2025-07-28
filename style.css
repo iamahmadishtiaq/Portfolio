@@ -199,30 +199,39 @@ body {
   transform: translateY(-2px) scale(1.05);
 }
 
+/* General section styling */
 section {
-  padding: 3rem 0;
+  padding: 2rem 0; /* Reduced from 3rem for tighter spacing */
   position: relative;
 }
 
+/* Hero section */
 .hero {
-  min-height: 75vh;
+  min-height: 75vh; /* Set a reasonable min-height for consistency */
   display: flex;
   align-items: center;
   position: relative;
   overflow: hidden;
-  margin-top: 5rem;
+  margin-top: 6rem; /* Reduced from 5rem, will fine-tune responsively below */
 }
 
+/* About section */
+#about {
+  position: relative;
+  z-index: 1;
+  padding: 2rem 0; /* Match other sections */
+}
+
+/* Standardize section-overlay spacing */
 .section-overlay {
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
   border-radius: 20px;
-  margin: 0.5rem 0;
-  padding: 1.8rem;
+  margin: 0.25rem 0; /* Reduced from 0.5rem */
+  padding: 1.5rem; /* Reduced from 1.8rem */
   border: 1px solid rgba(255, 255, 255, 0.2);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
 }
-
 .section-title {
   font-size: 2.2rem;
   font-weight: 700;
@@ -250,6 +259,8 @@ section {
 }
 
 .hero-content {
+  position: relative;
+  z-index: 2;
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(20px);
   border-radius: 20px;
@@ -327,12 +338,13 @@ section {
   background: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(20px);
   border-radius: 15px;
-  padding: 1.5rem;
+  padding: 2.5rem;
   border: 1px solid rgba(255, 255, 255, 0.2);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
   height: 100%;
 }
+
 
 .about .glass-card {
   padding: 2rem;
@@ -660,7 +672,7 @@ footer {
   animation: slideInRight 0.6s ease forwards;
 }
 
-@media (max-width: 1024px) {
+@media screen and  (min-width:320px) and ( max-width: 1024px) {
 
    .nav-title {
     font-size: 0.67rem; /* Chhoti screen ke liye chhoti font */
@@ -687,6 +699,13 @@ footer {
     font-size: 1.8rem;
   }
 
+  #about {
+  position: relative;
+  z-index: 1;
+  padding: 1rem 0; /* Match other sections */
+}
+
+  
   .btn-primary{
     padding: 1rem 0.4rem;
   }
@@ -697,6 +716,7 @@ footer {
   
    section{
     padding: 1rem 0;
+    margin: 0rem 0;
    }
 
   .section-title {
@@ -712,10 +732,6 @@ footer {
   .profile-image {
     width: 220px;
     height: 220px;
-  }
-  
-  .hero-content {
-    padding: 1.2rem;
   }
 
   .status-box {

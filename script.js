@@ -6,10 +6,8 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('scroll', () => {
     let currentScroll = window.pageYOffset;
     if (currentScroll > lastScrollTop) {
-      // Scroll down
       navbar.classList.add('hidden');
     } else {
-      // Scroll up
       navbar.classList.remove('hidden');
     }
     lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
@@ -140,15 +138,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Update year in footer
   document.getElementById('current-year').textContent = new Date().getFullYear();
-
-  // Parallax effect for hero section
-  window.addEventListener('scroll', () => {
-    const scrolled = window.pageYOffset;
-    const hero = document.querySelector('.hero');
-    if (hero) {
-      hero.style.transform = `translateY(${scrolled * 0.15}px)`;
-    }
-  });
 
   // Typewriter effect for hero title
   const heroTitle = document.querySelector('.hero h1');
