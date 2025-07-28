@@ -207,7 +207,7 @@ section {
 
 /* Hero section */
 .hero {
-  min-height: 75vh; /* Set a reasonable min-height for consistency */
+  /* min-height: 75vh; Set a reasonable min-height for consistency */
   display: flex;
   align-items: center;
   position: relative;
@@ -672,7 +672,7 @@ footer {
   animation: slideInRight 0.6s ease forwards;
 }
 
-@media screen and  (min-width:320px) and ( max-width: 768px) {
+@media screen and  (min-width:320px) and ( max-width: 912px) {
 
    .nav-title {
     font-size: 0.67rem; /* Chhoti screen ke liye chhoti font */
@@ -823,9 +823,121 @@ footer {
   background: var(--gradient-2);
 }
 
-@media(max-width:393px){
+@media(width:393px){
       .hero {
+        min-height: 75vh;
         margin-top: 0rem;
         margin-bottom: -8rem;
     }
 }
+
+@media(width:375px){
+   .hero {
+        margin-top: 4rem;
+        margin-bottom: -3rem;
+    }
+   .btn-primary{
+    padding: 1rem 0.3rem;
+  }
+
+  .btn-outline-primary{
+    padding: 0.8rem 0.9rem;
+  }
+  
+  
+}
+
+@media(width:414px){
+      .hero {
+        min-height: 75vh;
+        margin-top: -1rem;
+        margin-bottom: -8rem;
+    }
+}
+
+@media(width:390px){
+      .hero {
+        min-height: 75vh;
+        margin-top: 1rem;
+        margin-bottom: -6rem;
+    }
+}
+
+@media(width:430px){
+      .hero {
+        min-height: 75vh;
+        margin-top: -2rem;
+        margin-bottom: -9rem;
+    }
+}
+
+@media(width:412px){
+      .hero {
+        min-height: 75vh;
+        margin-top: -2rem;
+        margin-bottom: -9rem;
+    }
+       .btn-primary{
+    padding: 1rem 1rem;
+  }
+
+  .btn-outline-primary{
+    padding: 0.8rem 0.9rem;
+  }
+}
+
+@media(width:360px){
+   .hero {
+        min-height: 75vh;
+        margin-top: 5rem;
+        margin-bottom: -3.5rem;
+    }
+     .btn-primary{
+    padding: 1rem 0.1rem;
+  }
+
+  .btn-outline-primary{
+    padding: 0.8rem 0.6rem;
+  }
+}
+
+@media(width:768px){
+      .hero {
+        min-height: 75vh;
+        margin-top: -5rem;
+        margin-bottom: -13rem;
+    }
+}
+
+@media(width:820px){
+      .hero {
+        min-height: 75vh;
+        margin-top: -7.5rem;
+        margin-bottom: -16rem;
+    }
+}
+
+@media(width:912px){
+      .hero {
+        min-height: 75vh;
+        margin-top: -12rem;
+        margin-bottom: -20rem;
+    }
+}
+
+@media(width:540px){
+      .hero {
+        min-height: 75vh;
+        margin-top: 2rem;
+        margin-bottom: -5rem;
+    }
+}
+
+@media(width:853px){
+      .hero {
+        min-height: 75vh;
+        margin-top: -9.5rem;
+        margin-bottom: -18rem;
+    }
+}
+
